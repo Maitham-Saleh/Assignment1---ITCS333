@@ -1,66 +1,53 @@
 .header{
+    font-style: oblique; /* Applies oblique style to header */
+}      
 
-    font-style: oblique;
-  }      
-  
-  .h12{
-
-    font-family: Arial, Helvetica, sans-serif;
+.h12{
+    font-family: Arial, Helvetica, sans-serif; /* Sets font family */
     font-style: oblique;
     color: purple;
-   text-align: center;
-   background-color: yellow;
-  }
-  .nav12 ul {
+    text-align: center;
+    background-color: yellow;
+}
+
+.nav12 ul {
     display: flex;
-    justify-content: space-around;
-    list-style-type: none;
+    justify-content: space-around; /* Evenly spaces items */
+    list-style-type: none; /* Removes bullets */
     padding: 30px;
     margin: 0;
     background-color: aliceblue;
     color: purple;
-    border-radius: 180px;
+    border-radius: 180px; /* Rounds edges */
     border-style: inset;
 }
 
 .nav12 ul li {
     margin: 10px;
     font-style: oblique;
-    
-    
 }
 
 .nav12 ul li a {
-    text-decoration: none;
+    text-decoration: none; /* Removes underline */
     color: #333333;
     font-size: 30px;
-  
-    transition:1s;
+    transition: 1s; /* Smooth transition for hover effect */
 }
 
 .nav12 ul li a:hover {
-   
-    transform: scale(1.05); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); /* Slightly enlarges on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
 }
 
-  
-
-
 .our-photo{
-
-
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-
 }
 
-
 .our-photo img{
-
-    flex: 1 1 calc(33.333% - 20px);
+    flex: 1 1 calc(33.333% - 20px); /* Responsive image sizing */
     max-width: 60%;
     border-radius: 10px;
     transition: transform 0.3s;
@@ -68,32 +55,26 @@
 }
 
 .main-sec{
-
-padding: 100px;
-text-align: center;
-
+    padding: 100px;
+    text-align: center;
 }
 
-
-
-@media (max-width: 768px) {
-    
-
+@media (max-width: 768px) { /* Responsive design for tablets */
     .nav12 ul {
         flex-direction: column;
         align-items: center;
     }
 
     .h12 {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* Adjusts font size */
     }
 
     .schedule-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr; /* Changes grid layout */
     }
 
     .teacher {
-        flex-direction: column; 
+        flex-direction: column; /* Stacks items vertically */
     }
 
     .htea1, .htea2, .htea3 {
@@ -109,9 +90,7 @@ text-align: center;
     }
 }
 
-@media (max-width: 480px) {
-    
-
+@media (max-width: 480px) { /* Responsive design for mobile */
     .h12 {
         font-size: 1.5rem;
     }
@@ -145,10 +124,6 @@ text-align: center;
     .main-sec {
         padding: 10px;
     }
-    .in{
-
-        
-    }
 }
 
 .teacher{
@@ -158,226 +133,97 @@ text-align: center;
     justify-content: center;
 }
 
-
 .body1{
-background-color: rgb(111, 111, 227);
-color: aliceblue;
+    background-color: rgb(111, 111, 227);
+    color: black;
 }
 
 .We{
- font-style: oblique;
- font-size: 80px;
+    font-style: oblique;
+    font-size: 80px;
 }
 
-.p1{
-
-font-style: oblique;
-font-size: 50px;
-color: brown;
-
-}
-.wk{
-font-style: oblique;
-font-size: 80px;
-
-}
-
-.p2{
-
-font-style: oblique;
-font-size: 50px;
-color: brown;
-
-}
-.pg{
-
-font-style: oblique;
-font-size: 80px;
-
-}
-.pr{
-font-style: oblique;
-font-size: 80px;
-color: black;
-}
-.p4{
-font-style: oblique;
-font-size: 30px;
+.p1, .p2, .p4{
+    font-style: oblique;
+    font-size: 50px;
     color: brown;
 }
-.reee{
-   margin-top: 30px;
-    background-color: aliceblue;
-    padding: 8%;
-    border-radius: 180px;
-    border-style: inset;
+
+.wk, .pg, .pr{
+    font-style: oblique;
+    font-size: 80px;
 }
 
-.photo-g{
+.reee, .photo-g, .Welcome, .Weekly-schedule, .Information{
     background-color: aliceblue;
     padding: 70px;
     border-radius: 180px;
     border-style: inset;
     margin-top: 20px;
 }
-.pg{
-    color: black;
-    font-style: oblique;
-}
 
-
-
-.Welcome{
-
-    background-color: aliceblue;
-    padding: 70px;
-    border-radius: 180px;
-    border-style: inset;
-}
-.We{
-    color:black
-}
 .schedule-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr; 
-    gap: 10px; 
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
     color: black;
     padding: 20px;
     border-radius: 10px;
     transition: 1s;
 }
+
 .schedule-grid:hover{
-
-    
     transform: scale(1.05); 
-    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-
-
 }
+
 .schedule-grid .day {
     font-weight: bold;
     background-color: #ffcc00;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    
 }
 
 .schedule-grid .activity {
-   color: black;
+    color: black;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    background-color:rgba(90, 132, 247, 0.623);
-
-}
-
-.Weekly-schedule{
-
-    background-color: aliceblue;
-    padding: 70px;
-    border-radius: 180px;
-    border-style: inset;
-    margin-top: 20px;
-}
- 
-.wk{
-    color: black;
-    font-style: oblique;
+    background-color: rgba(90, 132, 247, 0.623);
 }
 
 .teacher{
     display: flex;
     flex-direction: row;
-   
 }
 
-.Information{
-    background-color: white;
-    margin-top: 30px;
-    padding: 30px;
-    border-style: inset;
-    border-radius: 180px;
-
-}
 .h4{
-   font-style: oblique;
-   color: black;
-   font-size: 30px;
-}
-
-
-.t1p{
-    display: flex;
-    flex-direction: row;
-    background-color: gray;
-    font-size: 20px;
-    font-size: 20px;
     font-style: oblique;
-   padding: 60px;
-    border-radius: 200px;
-    border-style: groove;
-    color: white;
-   transition: 1s;
-    margin-right: 10px;
-    
-}
-
-.t2p{
-   
-    margin-right: 10px;
-    border-style: groove;
-    display: flex;
-    flex-direction: row;
-    background-color: gray;
-    font-size: 20px;
-    font-size: 20px;
-    font-style: oblique;
-   padding: 60px;
-    border-radius: 200px;
-   color: white;
-   transition: 1s;
-}
-.t3p{
-    display: flex;
-    flex-direction: row;
-    background-color: gray;
-    font-size: 20px;
-    font-size: 20px;
-    font-style: oblique;
-   padding: 60px;
-    border-radius: 200px;
-    color: white;
-   transition: 1s;
-   border-style: groove;
-}
-
-
-.t3 :hover{ 
-    transform: scale(1.05); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-
-}
-.t2 :hover{ 
-    transform: scale(1.05); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-
-}
-.t1:hover{ 
-    transform: scale(1.05); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-
-}
-.htea1{
     color: black;
-    font-style: oblique;
+    font-size: 80px;
 }
-.htea2{
+
+.t1p, .t2p, .t3p{
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    font-size: 20px;
+    font-style: oblique;
+    padding: 60px;
+    border-radius: 200px;
     color: black;
-    font-style: oblique;
+    transition: 1s;
+    border-style: groove;
+    margin-right: 10px;
 }
-.htea3{
+
+.t1:hover, .t2:hover, .t3:hover { 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.htea1, .htea2, .htea3{
     color: black;
     font-style: oblique;
 }
@@ -385,12 +231,14 @@ font-size: 30px;
 .fp{
     background-color: #ffcc00;
 }
+
 footer {
-    background-color:yellow; 
+    background-color: yellow; 
     color: black; 
     padding: 20px 0; 
     text-align: center; 
 }
+
 .pf{
     text-align: center;
 }
