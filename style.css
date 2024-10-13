@@ -1,0 +1,396 @@
+.header{
+
+    font-style: oblique;
+  }      
+  
+  .h12{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    color: purple;
+   text-align: center;
+   background-color: yellow;
+  }
+  .nav12 ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 30px;
+    margin: 0;
+    background-color: aliceblue;
+    color: purple;
+    border-radius: 180px;
+    border-style: inset;
+}
+
+.nav12 ul li {
+    margin: 10px;
+    font-style: oblique;
+    
+    
+}
+
+.nav12 ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 30px;
+  
+    transition:1s;
+}
+
+.nav12 ul li a:hover {
+   
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+  
+
+
+.our-photo{
+
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+
+.our-photo img{
+
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: 60%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    object-fit: cover;
+}
+
+.main-sec{
+
+padding: 100px;
+text-align: center;
+
+}
+
+
+
+@media (max-width: 768px) {
+    
+
+    .nav12 ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h12 {
+        font-size: 1.8rem;
+    }
+
+    .schedule-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .teacher {
+        flex-direction: column; 
+    }
+
+    .htea1, .htea2, .htea3 {
+        font-size: 1.3rem;
+    }
+
+    .our-photo img {
+        max-width: 100%; 
+    }
+
+    .main-sec {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+
+    .h12 {
+        font-size: 1.5rem;
+    }
+
+    .nav12 ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav12 a {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .schedule-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .teacher {
+        flex-direction: column; 
+    }
+
+    .t1p, .t2p, .t3p {
+        font-size: 0.9rem; 
+    }
+
+    .our-photo img {
+        max-width: 100%; 
+    }
+
+    .main-sec {
+        padding: 10px;
+    }
+    .in{
+
+        
+    }
+}
+
+.teacher{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.body1{
+background-color: rgb(111, 111, 227);
+color: aliceblue;
+}
+
+.We{
+ font-style: oblique;
+ font-size: 80px;
+}
+
+.p1{
+
+font-style: oblique;
+font-size: 50px;
+color: brown;
+
+}
+.wk{
+font-style: oblique;
+font-size: 80px;
+
+}
+
+.p2{
+
+font-style: oblique;
+font-size: 50px;
+color: brown;
+
+}
+.pg{
+
+font-style: oblique;
+font-size: 80px;
+
+}
+.pr{
+font-style: oblique;
+font-size: 80px;
+color: black;
+}
+.p4{
+font-style: oblique;
+font-size: 30px;
+    color: brown;
+}
+.reee{
+   margin-top: 30px;
+    background-color: aliceblue;
+    padding: 8%;
+    border-radius: 180px;
+    border-style: inset;
+}
+
+.photo-g{
+    background-color: aliceblue;
+    padding: 70px;
+    border-radius: 180px;
+    border-style: inset;
+    margin-top: 20px;
+}
+.pg{
+    color: black;
+    font-style: oblique;
+}
+
+
+
+.Welcome{
+
+    background-color: aliceblue;
+    padding: 70px;
+    border-radius: 180px;
+    border-style: inset;
+}
+.We{
+    color:black
+}
+.schedule-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 10px; 
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.schedule-grid:hover{
+
+    
+    transform: scale(1.05); 
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+
+
+}
+.schedule-grid .day {
+    font-weight: bold;
+    background-color: #ffcc00;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.schedule-grid .activity {
+   color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color:rgba(90, 132, 247, 0.623);
+
+}
+
+.Weekly-schedule{
+
+    background-color: aliceblue;
+    padding: 70px;
+    border-radius: 180px;
+    border-style: inset;
+    margin-top: 20px;
+}
+ 
+.wk{
+    color: black;
+    font-style: oblique;
+}
+
+.teacher{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.Information{
+    background-color: white;
+    margin-top: 30px;
+    padding: 30px;
+    border-style: inset;
+    border-radius: 180px;
+
+}
+.h4{
+   font-style: oblique;
+   color: black;
+   font-size: 30px;
+}
+
+
+.t1p{
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    font-size: 20px;
+    font-size: 20px;
+    font-style: oblique;
+   padding: 60px;
+    border-radius: 200px;
+    border-style: groove;
+    color: white;
+   transition: 1s;
+    margin-right: 10px;
+    
+}
+
+.t2p{
+   
+    margin-right: 10px;
+    border-style: groove;
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    font-size: 20px;
+    font-size: 20px;
+    font-style: oblique;
+   padding: 60px;
+    border-radius: 200px;
+   color: white;
+   transition: 1s;
+}
+.t3p{
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    font-size: 20px;
+    font-size: 20px;
+    font-style: oblique;
+   padding: 60px;
+    border-radius: 200px;
+    color: white;
+   transition: 1s;
+   border-style: groove;
+}
+
+
+.t3 :hover{ 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+
+}
+.t2 :hover{ 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+
+}
+.t1:hover{ 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+
+}
+.htea1{
+    color: black;
+    font-style: oblique;
+}
+.htea2{
+    color: black;
+    font-style: oblique;
+}
+.htea3{
+    color: black;
+    font-style: oblique;
+}
+
+.fp{
+    background-color: #ffcc00;
+}
+footer {
+    background-color:yellow; 
+    color: black; 
+    padding: 20px 0; 
+    text-align: center; 
+}
+.pf{
+    text-align: center;
+}
